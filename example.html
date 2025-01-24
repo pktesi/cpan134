@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Advanced Front-End Programming</title>
+        <style>
+            /* General styles */
+            body {
+                font-family: Arial, sans-serif;
+                margin: 0;
+                padding: 0;
+                background-color: #f4f4f9;
+                color: #333;
+                line-height: 1.6;
+            }
+
+            /* Header styling */
+            header {
+                background: linear-gradient(to right, #4caf50, #81c784);
+                color: white;
+                padding: 20px 0;
+                text-align: center;
+            }
+
+            header h1 {
+                margin: 0;
+                font-size: 2.5em;
+                cursor: pointer;
+                transition: transform 0.3s ease, color 0.3s ease;
+            }
+
+            header h1:hover {
+                color: #f4f4f9;
+                transform: scale(1.1);
+            }
+
+            /* Main section styling */
+            main {
+                padding: 20px;
+            }
+
+            section {
+                background: white;
+                border-radius: 8px;
+                box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+                padding: 20px;
+                margin: 20px auto;
+                max-width: 800px;
+            }
+
+            section h2 {
+                margin-top: 0;
+                color: #4caf50;
+            }
+
+            section p {
+                font-size: 1.1em;
+            }
+
+            /* Footer styling */
+            footer {
+                background-color: #333;
+                color: white;
+                text-align: center;
+                padding: 10px 0;
+                position: relative;
+                bottom: 0;
+                width: 100%;
+            }
+
+            footer p {
+                margin: 0;
+            }
+
+            /* Button styling */
+            button {
+                background-color: #4caf50;
+                color: white;
+                border: none;
+                padding: 10px 20px;
+                font-size: 1em;
+                border-radius: 4px;
+                cursor: pointer;
+                transition: background-color 0.3s ease;
+            }
+
+            button:hover {
+                background-color: #45a049;
+            }
+        </style>
+    </head>
+    <body>
+        <header>
+            <h1>Welcome to Advanced Front-End Programming</h1>
+        </header>
+        <main>
+            <section>
+                <h2>Introduction</h2>
+                <p>This course will cover advanced topics in front-end programming...</p>
+                <button id="learnMoreButton">Learn More</button>
+            </section>
+        </main>
+        <footer>
+            <p>&copy; 2024 Advanced Front-End Programming</p>
+        </footer>
+        <script>
+            document.addEventListener('DOMContentLoaded', () => {
+                const header = document.querySelector('header h1');
+                header.addEventListener('click', () => {
+                    alert('Welcome to Advanced Front-End Programming!');
+                });
+
+                const learnMoreButton = document.getElementById('learnMoreButton');
+                learnMoreButton.addEventListener('click', () => {
+                    alert('Thank you for your interest! More details coming soon.');
+                });
+            });
+        </script>
+    </body>
+</html>
