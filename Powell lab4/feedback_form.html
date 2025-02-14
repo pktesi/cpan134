@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Feedback Form</title>
+
+    </head>
+    <body>
+        <h2>Feedback Form</h2>
+        <form>
+
+            <!--Name input-->
+            <label for="Name">Name:</label>
+            <input type="text" id="Name" name="name" required><br><br>
+
+            <!-- Email Input-->
+             <label for="email">Email:</label>
+             <input type="email" id="email" name="email" required><br><br>
+
+             <!--Radio Button-->
+             <label>Rating:</label>
+             <input type="radio" id="rate1" name="rating" value="1" required>
+             <label for="rating1">1</label>
+
+             <input type="radio" id="rate2" name="rating" value="2" required>
+             <label for="rating2">2</label>
+
+             <input type="radio" id="rate3" name="rating" value="3" required>
+             <label for="rating3">3</label>
+
+             <input type="radio" id="rate4" name="rating" value="4" required>
+             <label for="rating4">4</label>
+
+             <input type="radio" id="rate5" name="rating" value="5" required>
+             <label for="rating">5</label><br><br>
+
+             <!--Comments-->
+             <label for="comments">Comments:</label><br>
+             <textarea id="comments" name="comments"  rows="4" cols="50"></textarea><br><br>
+
+             <!--Agreement Button-->
+             <input type="checkbox" id="agreement" name="agreement" required>
+             <label for="agreement">I agree to the terms and conditions</label><br><br>
+
+             <!--Submit Button-->
+
+             <button type="submit">Submit</button>         
+        </form>
+    </body>
+</html>
