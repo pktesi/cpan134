@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Powell Tesi Final Project</title>
+    <link rel="stylesheet" href="index.css">
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&display=swap" rel="stylesheet">
+    
+</head>
+<body class="home">
+<script src="index.js"></script>
+    <div id="menuButton" onclick="toggleSidebar()">☰</div>
+    <div id="sidebar" class="sidebar">
+        <ul>
+            <li><a href="home.html"></a>Home</li>
+            <li><a href="contact.html">Contact</a></li>
+            <li><a href="resume.html">Resume</a></li>
+            <li><a href="biography.html">Biography</a></li>
+            <li><a href="feedback.html">Tell Me You Were Here</a></li>
+            <li><a href="projects.html">Projects</a></li>
+        </ul>
+    </div>
+    <div class="contact-title">
+        <h1>Contact Me</h1>
+    </div>
+    
+    <table class="contact-table">
+        <tr>
+        <td>
+            <form onsubmit="contactPeople(event)">
+                <label for="name">Name:</label><br>
+                <input type="text" id="name" name="name" required><br>
+                <label for="email">Email:</label><br>
+                <input type="email" id="email" name="email" required><br>
+                <label for="message">Message:</label><br>
+                <textarea id="message" name="message" rows="4" required></textarea><br>
+                <button type="submit">Submit</button>
+            </form>
+        </td>
+        </tr>
+    </table>
+    <footer class="contact-footer">Leave me your information with a message and Ill get in touch</footer>
+    <img src="images/contact.webp" alt="contact me" id="contactbackground">
+</body>
+</html>

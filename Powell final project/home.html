@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Powell Tesi Final Project</title>
+    <link rel="stylesheet" href="index.css">
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&display=swap" rel="stylesheet">
+    
+</head>
+<body class="home">
+<script src="index.js"></script>
+    <div id="menuButton" onclick="toggleSidebar()">☰</div>
+    <div id="sidebar" class="sidebar">
+        <ul>
+            <li><a href="home.html"></a>Home</li>
+            <li><a href="contact.html">Contact</a></li>
+            <li><a href="resume.html">Resume</a></li>
+            <li><a href="biography.html">Biography</a></li>
+            <li><a href="feedback.html">Tell Me You Were Here</a></li>
+            <li><a href="projects.html">Projects</a></li>
+        </ul>
+    </div>
+    <div class="video-container">
+        <video autoplay muted loop id="backgroundVideo">
+            <source src="videos/galaxy.mp4" type="video/mp4">
+        </video>
+    </div>
+    <div class="audio-container">
+        <audio autoplay loop>
+            <source src="audio/timeless.mp3" type="audio/mpeg">
+          </audio>
+    </div>
+    <div class="title">
+        <h1>Welcome to <br> Powell Tesi<br>Portfolio</h1>
+    </div>
+    <div>
+    <img src="images/IMG_0117.JPG" alt="Powell Headshot" style="width: 200px; height: 200px;" class="headshot">
+      
+    <main>
+        <p>This website showcases my work and development journey at Humber College.</p>
+      </main>
+    
+      <footer>
+        <p>&copy; 2025 Powell Tesi. All rights reserved.</p>
+      </footer>
+      <script>
+        function toggleSidebar() {
+          const sidebar = document.getElementById("sidebar");
+          sidebar.classList.toggle("active");
+        }
+      </script>
+      
+</body>
+</html>
